@@ -45,6 +45,11 @@ module.exports = function(grunt) {
         process.env.NODE_ENV = options.node_env;
       }
 
+      // set NODE_PATH
+      if (options.node_path) {
+        process.env.NODE_PATH = options.node_path;
+      }
+
       if (options.background) {
         server = grunt.util.spawn({
           cmd:      process.argv[0],

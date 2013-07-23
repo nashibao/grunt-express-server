@@ -18,6 +18,7 @@ module.exports = function(grunt) {
     var options = this.options({
       args:          [ ],
       node_env:      undefined,
+      node_path:      undefined,
       background:    true,
       error:         function(err, result, code) { /* Callback has to exist */ },
       fallback:      function() { /* Prevent EADDRINUSE from breaking Grunt */ },
